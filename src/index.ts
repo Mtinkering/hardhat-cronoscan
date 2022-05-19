@@ -159,13 +159,13 @@ const verifySubtask: ActionType<VerificationSubtaskArgs> = async (
 ) => {
   const { etherscan } = config;
 
-  // const { isAddress } = await import("@ethersproject/address");
-  // if (!isAddress(address)) {
-  //   throw new NomicLabsHardhatPluginError(
-  //     pluginName,
-  //     `${address} is an invalid address.`
-  //   );
-  // }
+  const { isAddress } = await import("@ethersproject/address");
+  if (!isAddress(address)) {
+    throw new NomicLabsHardhatPluginError(
+      pluginName,
+      `${address} is an invalid address.`
+    );
+  }
 
   // This can only happen if the subtask is invoked from within Hardhat by a user script or another task.
   if (!Array.isArray(constructorArguments)) {
