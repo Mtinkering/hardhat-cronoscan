@@ -1,23 +1,16 @@
 {
-  "name": "@nomiclabs/hardhat-etherscan",
+  "name": "@eaglewalker/hardhat-cronoscan",
   "version": "3.0.3",
-  "description": "Hardhat plugin for verifying contracts on etherscan",
-  "repository": "github:nomiclabs/hardhat",
-  "homepage": "https://github.com/nomiclabs/hardhat/tree/master/packages/hardhat-etherscan",
-  "author": "Nomic Labs LLC",
-  "contributors": [
-    "Nomic Labs LLC",
-    "Marin Petrunić <marin@nodefactory.io>"
-  ],
+  "description": "Hardhat plugin for verifying contracts on cronoscan",
   "license": "MIT",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "keywords": [
-    "ethereum",
+    "cronos",
     "smart-contracts",
     "hardhat",
     "hardhat-plugin",
-    "etherscan"
+    "cronoscan"
   ],
   "scripts": {
     "lint": "yarn prettier --check && yarn eslint",
