@@ -9,6 +9,13 @@ export const chainConfig: ChainConfig = {
       browserURL: "https://etherscan.io",
     },
   },
+  "base-mainnet": {
+    chainId: 8453,
+    urls: {
+      apiURL: "https://api.basescan.org/api",
+      browserURL: "https://basescan.org/",
+    },
+  },
   "cronos-mainnet": {
     chainId: 25,
     urls: {

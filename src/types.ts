@@ -1,5 +1,6 @@
 type Chain =
-  "cronos-mainnet"
+  | "cronos-mainnet"
+  | "base-mainnet"
   | "mainnet"
   | "ropsten"
   | "rinkeby"
